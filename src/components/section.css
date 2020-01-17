@@ -1,0 +1,128 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: white !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1 {
+    display: flex;
+    padding: 20px;
+}
+
+header > div {
+    justify-content: flex-end;
+}
+
+header > h1 > img {
+    height: 100px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.section > div {
+    padding: 20px;
+}
+
+.section > h3 {
+    margin-bottom: 1rem;
+}
+
+.--white-text {
+    color: white;
+}
+
+.--shadowed-text {
+    text-shadow: 1px 2px 3px black;
+}
+
+.section.coming-soon {
+    margin-top: 100px;
+}
+
+.section.coming-soon:before {
+    content: '';
+    background-image: url('/images/Uglee\ rope.jpg');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    z-index: -1;
+}
+
+.section.coming-soon > div > blockquote > p {
+    padding: 20px;
+}
+
+.section.coming-soon > div > blockquote > div {
+    text-align: right;;
+}
+
+.section.how-it-works > div > p {
+    margin: 15px 0;
+}
+
+.section.how-it-works > div li {
+    margin: 15px 0;
+}
+
+.section.sign-up > div > p {
+    padding: 20px 0;
+}
+
+.section.sign-up > div > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.sign-up > div > form > div {
+    padding: 20px 0;
+}
+
+.section.sign-up > div > form button {
+    background-color: burlywood;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.section.sign-up > div > form button:hover {
+    background-color: #eab46e;
+}
+
+.section.writing-tasks {
+    background-color:  #c2f9c2;
+}
+
+.section.writing-tasks > div {
+    display: flex;
+}
+
+.section.writing-tasks > div > div {
+    width: 30%;
+    height: 250px;
+    margin: 0 20px;
+    padding: 20px;
+    text-shadow: none;
+}
