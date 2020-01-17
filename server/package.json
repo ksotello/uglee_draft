@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "create-build-pack": "heroku create -b https://github.com/mars/create-react-app-buildpack.git"
   },
   "keywords": [],
   "author": "",
