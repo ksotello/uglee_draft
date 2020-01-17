@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build"
+    "start": "node index.js",
+    "create-build-pack": "heroku create -b https://github.com/mars/create-react-app-buildpack.git"
   },
   "keywords": [],
   "author": "",
