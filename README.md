@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+npx heroku create uglee-draft-client --remote uglee-draft-client
+npx heroku create uglee-draft-api --remote uglee-draft-api
+
+heroku ps:scale web=1 --remote uglee-draft-client
+heroku ps:scale api=1 --remote uglee-draft-api
