@@ -67,9 +67,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+// create repo
+npx heroku create -a uglee-draft-client
+npx heroku create -a uglee-draft-api
 
-npx heroku create uglee-draft-client --remote uglee-draft-client
-npx heroku create uglee-draft-api --remote uglee-draft-api
+// add buildpack
+npx heroku buildpacks:add -a uglee-draft-client https://github.com/heroku/heroku-buildpack-multi-procfile
+npx heroku buildpacks:add -a uglee-draft-api https://github.com/heroku/heroku-buildpack-multi-procfile
 
-heroku ps:scale web=1 --remote uglee-draft-client
-heroku ps:scale api=1 --remote uglee-draft-api
+npx heroku config:set -a uglee-draft-client PROCFILE=Procfile
+npx heroku config:set -a uglee-draft-api PROCFILE=server/Procfile
+
+git push https://git.heroku.com/uglee-draft-client.git HEAD:master
+git push https://git.heroku.com/uglee-draft-api.git HEAD:master
+
