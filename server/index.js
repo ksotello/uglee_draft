@@ -8,8 +8,8 @@ app.use(express.json())
 app.use(cors())
 
 const sendEmail = async ({ first_name, last_name, email_address, project_of_interest }) => {
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
+    const transporter = nodemailer.createTransport("SMTP", {
+        service: 'Gmail',
         auth: {
             user: 'kylesotello@gmail.com',
             pass: 'Sussudio1783!'
