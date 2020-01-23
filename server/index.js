@@ -9,11 +9,12 @@ app.use(cors())
 
 const sendEmail = async ({ first_name, last_name, email_address, project_of_interest }) => {
     const transporter = nodemailer.createTransport({
-        host: 'smtp.mailtrap.io',
-        port: 2525,
+        host: 'smtp.gmail.com',
+        port: 465,
+        required: true,
         auth: {
-            user: '15b731ce5f9476',
-            pass: '60931371576da2'
+            user: 'kylesotello@gmail.com',
+            pass: 'Sussudio1783!'
         }
     });
 
