@@ -2,7 +2,7 @@ const express = require('express')
 const nodemailer = require('nodemailer');
 const app = express()
 const cors = require('cors')
-const port = 3000
+const port = process.env.PORT || 5000
 
 app.use(express.json())
 app.use(cors())
