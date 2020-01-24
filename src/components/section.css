@@ -57,7 +57,7 @@ header > h1 > img {
 
 .section.coming-soon:before {
     content: '';
-    background-image: url('/static/images/Uglee\ rope.jpg');
+    background-image: url('../../images/Uglee\ rope.jpg');
     filter: blur(8px);
     -webkit-filter: blur(8px);
     background-repeat: no-repeat;
